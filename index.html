@@ -5,22 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Etiqueta para responsive-->
     <meta http-equiv="X-UA-Compatible" content="ie=edge"><!--Etiqueta de compatibilidad para IE-->
     <!--Se pone el CSS al inicio de la página para que cargue rápido-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1"
+        crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css">
     <title>Laura Martinez</title>
 </head>
 <body>
     <header class="header"><!--Encabezado o barra superior-->
         <nav><!--Navegar en la página-->
-            <a href="http://www.google.com"><i></i>ABOUT</a>
-            <a href="http://"><i></i>RESUME</a>
+            <a href="http://www.google.com"><i class="fas fa-user"></i>ABOUT</a>
+            <a href="http://"><i class="fas fa-file"></i>RESUME</a>
            <!-- <a href="http://"><i></i>WORKS</a>
             <a href="http://"><i></i>BLOG</a>
             <a href="http://"><i></i>CONTACT</a>-->
         </nav>
     </header>
-    <section><!--Secciones de contenido-->
-        <img src="./img/profile.png" alt="Imagen Profile"><!--Etiqueta alt es para que salga el texto cuando la imagen no se carga-->
-        <h1>Laura Martinez</h1>
+    <div class="modal" id="modal">
+        <div class="cerrar" id="cerrar">X</div>
+    </div>
+    <section class="section"><!--Secciones de contenido-->
+        <img src="./img/profile.png" alt="Imagen Profile" id="userImage"><!--Etiqueta alt es para que salga el texto cuando la imagen no se carga-->
+        <h1 id="name">Laura Martinez</h1>
         <h2>Web Designer</h2>
         <ol><!--Lista ordenada (enumeradas)-->
             <li><a href="http://"><i></i></a></li>
@@ -33,7 +40,7 @@
         <ul></ul><!--Lista desordenada (marcador)-->
         <footer>
             <a href="http://">DOWNLOAD CV</a>
-            <a href="http://">CONTACT ME</a>
+            <a href="http://">CONTACT ME</a>            
         </footer>
         <article></article>  
     </section>

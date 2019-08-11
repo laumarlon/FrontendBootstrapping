@@ -6,16 +6,22 @@ SELECTORES
 */
 
 body{
-    background-color: #00a516;
+    background: linear-gradient(to bottom right, #50a3a2 0%, #2eca7f 100%);
+    margin: 0;
 }
 
 .header{
-    background-color: #ffffff;
     width: 300px;
     height: 72px;
+    background-color: #ffffff;
     margin: 0 auto;
     display: flex;
     align-items: center;
+    font-family: "poppins";
+    border-radius: 0 0 10px 10px;    
+    position: fixed;
+    left: calc(50% - 150px);
+    top: 0;    
 }
 
 .header nav{
@@ -23,3 +29,56 @@ body{
     display: flex;
     justify-content: space-around;
 }
+
+.header a{
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.3s color;
+    position: relative;
+}
+
+header nav a::after {
+    content: '';
+    position: absolute;
+    height: 72px;
+    width: 2px;
+    background: radial-gradient(ellipse at top, #c5cad5b3 0%, #ffffff00 70%);
+    top: -17px;
+    right: -51px;
+}
+
+.header a:hover{
+    color: #2eca7f;
+}
+
+.header i{
+    font-size: 18px;
+}
+
+section{
+    margin-top: 100px;
+}
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: gray;
+}
+
+.cerrar{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.cerrado{
+    display: none;
+}
+
